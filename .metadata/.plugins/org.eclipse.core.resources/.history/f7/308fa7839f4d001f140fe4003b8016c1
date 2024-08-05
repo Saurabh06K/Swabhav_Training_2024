@@ -1,0 +1,23 @@
+package com.Aurionpro.Srp.Solution.Model;
+
+public class InvoicePrinter {
+	Invoice invoice;
+	TaxCalculator taxCalculator;
+
+	public Invoice getInvoice() {
+		return invoice;
+	}
+
+	public void setInvoice(Invoice invoice) {
+		this.invoice = invoice;
+	}
+	
+	public void print(Invoice invoice) {
+		System.out.println(invoice.getId());
+		System.out.println(invoice.getDesc());
+		System.out.println(invoice.getAmount());
+		System.out.println("Tax Percentage: "+invoice.getTax());
+		System.out.println("Tax Amount: "+TaxCalculator());
+		System.out.println("Total Amount: "+(invoice.getAmount()+calculateTax()));
+	}
+}

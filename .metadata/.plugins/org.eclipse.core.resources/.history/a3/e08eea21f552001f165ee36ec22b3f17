@@ -1,0 +1,85 @@
+package com.Aurionpro.UnitTesting;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class TicTacToeTest {
+
+	TicTacToe game;
+
+	@BeforeEach
+	public void init() {
+		game = new TicTacToe();
+		TicTacToe.currentPlayer = 'X';
+		TicTacToe.displayBoard();
+//		TicTacToe.board = new char[][] { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' } };
+	}
+
+	@AfterEach
+	void status() {
+		System.out.println("Test passed!");
+	}
+
+	@Test
+	public void testIsMoveValid() {
+		assertTrue(TicTacToe.isMoveValid(5));
+		TicTacToe.board[1][1] = 'X';
+		assertFalse(TicTacToe.isMoveValid(5));
+	}
+
+	@Test
+	public void testWinConditionRow() {
+		TicTacToe.updateBoard(1); // X
+		TicTacToe.updateBoard(4); // O
+		TicTacToe.updateBoard(2); // X
+		TicTacToe.updateBoard(5); // O
+		TicTacToe.updateBoard(3); // X
+
+		assertTrue(TicTacToe.checkWin());
+	}
+
+	@Test
+	public void testWinConditionColumn() {
+		TicTacToe.updateBoard(1); // X
+		TicTacToe.updateBoard(2); // O
+		TicTacToe.updateBoard(4); // X
+		TicTacToe.updateBoard(5); // O
+		TicTacToe.updateBoard(7); // X
+
+		assertTrue(TicTacToe.checkWin());
+	}
+
+	@Test
+	public void testWinDiagonal() {
+		TicTacToe.updateBoard(1); // X
+		TicTacToe.updateBoard(5); // X
+		TicTacToe.updateBoard(9); // X
+		TicTacToe.updateBoard(3);
+		TicTacToe.updateBoard(5);
+		TicTacToe.updateBoard(7);
+
+		assertTrue(TicTacToe.checkWin());
+	}
+
+	@Test
+	public void testUpdateBoard() {
+		TicTacToe.updateBoard(7);
+		assertEquals('X', TicTacToe.board[2][0]);
+		TicTacToe.currentPlayer = 'O';
+		TicTacToe.updateBoard(5);
+		assertEquals('O', TicTacToe.board[1][1]);
+	}
+	
+	@Test
+	public void testPlayerSwitch() {
+		assertEquals('X', TicTacToe.currentPlayer);
+		TicTacToe.currentPlayer = 'O';
+		assertEquals('O', TicTacToe.currentPlayer);
+	}
+
+}

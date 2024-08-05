@@ -1,0 +1,63 @@
+package com.Aurionpro.Model;
+
+public class Game implements IPlayGame {
+	
+	private Board board = new Board();
+	private Player currentPlayer = Player.X;
+	private int turnCount = 0;
+	private boolean gameWon = false;
+
+	@Override
+	public void start() {
+		while (turnCount < 9 && !gameWon) {
+			clearScreen();
+			displayBoard();
+			playerMove();
+			gameWon = checkWin();
+			if (gameWon) {
+				clearScreen();
+				displayBoard();
+				System.out.println("Player " + currentPlayer + " wins!");
+				return;
+			}
+			if (turnCount == 8) {
+				clearScreen();
+				displayBoard();
+				System.out.println("It's a draw!");
+				return;
+			}
+			turnCount++;
+			currentPlayer = (currentPlayer == Player.X) ? Player.O : Player.X;
+		}
+	}
+
+	@Override
+	public void displayBoard() {
+		board.displayBoard();
+	}
+
+	@Override
+	public void palyerMove() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean checkWin() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isMoveValid(int choice) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void updateBoard(int choice) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

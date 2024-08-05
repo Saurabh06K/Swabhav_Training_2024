@@ -1,0 +1,25 @@
+package com.Aurionpro.UnitTesting;
+
+public class Operations {
+	int addition(int number1, int number2) {
+		return number1 + number2;
+	}
+
+	int subtraction(int number1, int number2) {
+		return number1 - number2;
+	}
+
+	int multiplication(int number1, int number2) {
+		return number1 * number2;
+	}
+	
+	int division(int number1, int number2) {
+		return number1 / number2;
+	}
+
+	int[] squareOfArrayElements(int numbers[]) {
+		for (int i = 0; i < numbers.length; i++) {
+			numbers = numbers * numbers;
+		}
+	}
+}

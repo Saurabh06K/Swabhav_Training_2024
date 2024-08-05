@@ -1,0 +1,11 @@
+package com.Aurionpro.Test;
+
+import com.Aurionpro.Model.Game;
+import com.Aurionpro.Model.IPlayGame;
+
+public class TicTacToeTest {
+	public static void main(String[] args) {
+		IPlayGame game = new Game();
+		game.start();
+	}
+}

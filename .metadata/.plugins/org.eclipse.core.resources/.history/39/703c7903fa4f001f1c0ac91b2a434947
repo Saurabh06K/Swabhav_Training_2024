@@ -1,0 +1,13 @@
+package com.Aurionpro.Structural.Decorator.Model;
+
+public class OilChange extends CarServiceDecorator {
+
+	public OilChange(ICarService car) {
+		super();
+	}
+	@Override
+	public double getCost() {
+		return super.ge
+	}
+
+}

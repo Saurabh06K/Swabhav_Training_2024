@@ -1,0 +1,51 @@
+package com.Aurionpro.UnitTesting;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class TicTacToeTest {
+
+	TicTacToe game;
+
+	@BeforeEach
+	public void init() {
+		game = new TicTacToe();
+		TicTacToe.currentPlayer = 'X';
+		TicTacToe.board = new char[][] { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' } };
+	}
+
+	@Test
+	public void testWinConditionRow() {
+		TicTacToe.updateBoard(1); // X
+		TicTacToe.updateBoard(4); // O
+		TicTacToe.updateBoard(2); // X
+		TicTacToe.updateBoard(5); // O
+		TicTacToe.updateBoard(3); // X
+
+		assertTrue(TicTacToe.checkWin());
+	}
+	
+	@Test
+	public void testWinConditionColumn() {
+		TicTacToe.updateBoard(1); // X
+		TicTacToe.updateBoard(2); // O
+		TicTacToe.updateBoard(4); // X
+		TicTacToe.updateBoard(5); // O
+		TicTacToe.updateBoard(8); // X
+
+		assertTrue(TicTacToe.checkWin());
+	}
+
+	@Test
+	public void testUpdateBoard() {
+		TicTacToe.updateBoard(1);
+		assertEquals('X', TicTacToe.board[0][0]);
+		TicTacToe.currentPlayer = 'O';
+		TicTacToe.updateBoard(5);
+		assertEquals('O', TicTacToe.board[1][1]);
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.Aurionpro.Behavioural.State.Model;
+
+public class Ordered implements IPacketState {
+
+	@Override
+	public void next() {
+		System.out.println("Moving to Ordered state");
+	}
+
+	@Override
+	public void previous() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void current() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

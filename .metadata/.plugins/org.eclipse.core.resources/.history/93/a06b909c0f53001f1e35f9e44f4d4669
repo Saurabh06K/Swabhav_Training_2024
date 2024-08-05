@@ -1,0 +1,5 @@
+package com.Aurionpro.UnitTesting;
+
+public class Student {
+	IStudentService studentService;
+}

@@ -1,0 +1,17 @@
+package com.Aurionpro.Creaational.AbstractFactory.Test;
+
+import com.Aurionpro.Creaational.AbstractFactory.Model.ICarFactory;
+import com.Aurionpro.Creaational.AbstractFactory.Model.ICars;
+import com.Aurionpro.Creaational.AbstractFactory.Model.Tata;
+
+public class CarTest {
+	public static void main(String[] args) {
+		ICarFactory carFactory = new ICarFactory() {
+			
+			@Override
+			public ICars makeCar() {
+				return new Tata();
+			}
+		};
+	}
+}

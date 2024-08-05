@@ -1,0 +1,38 @@
+package com.Aurionpro.Creaational.AbstractFactory.Model;
+
+public class CurrentAccount implements IAccount {
+	
+	private String name;
+	private String accountNumber;
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getAccountNumber() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void credit(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void debit(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

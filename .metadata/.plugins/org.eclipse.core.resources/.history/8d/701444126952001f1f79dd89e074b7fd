@@ -1,0 +1,24 @@
+package com.Aurionpro.UnitTesting;
+
+import org.junit.jupiter.api.BeforeEach;
+
+class TicTacToeTest {
+
+	TicTacToe game;
+
+	@BeforeEach
+	public void init() {
+		game = new TicTacToe();
+		TicTacToe.currentPlayer = 'X';
+		TicTacToe.board = new char[][] {
+			{'1', '2', '3'},
+			{'4', '5', '6'},
+			{'7', '8', '9'}
+		};
+	}
+	
+	public void testWinConditionRow() {
+		TicTacToe.updateBoard(1);
+	}
+
+}

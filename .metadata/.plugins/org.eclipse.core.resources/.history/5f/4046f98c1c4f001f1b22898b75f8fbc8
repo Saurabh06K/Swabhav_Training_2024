@@ -1,0 +1,11 @@
+package com.Aurionpro.Creaational.Singleton.Model;
+
+public class Login {
+	public Login() {
+		System.out.println("Login created");
+	}
+	
+	public status() {
+		System.out.println("Login successful");
+	}
+}

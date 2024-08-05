@@ -1,0 +1,5 @@
+package com.Aurionpro.Ocp.Violation.Model;
+
+public class FixedDeposit {
+
+}

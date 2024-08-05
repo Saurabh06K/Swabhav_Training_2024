@@ -1,0 +1,11 @@
+package com.Aurionpro.Structural.Adapter.Test;
+
+import com.Aurionpro.Structural.Adapter.Model.Biscuit;
+
+public class ShoppingTest {
+	public static void main(String[] args) {
+		Biscuit biscuit = new Biscuit();
+		biscuit.setName("Oreo");
+		biscuit.setMrp(50);
+	}
+}

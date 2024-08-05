@@ -1,0 +1,18 @@
+package com.Aurionpro.Structural.Proxy.Model;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		IStudent student1 = new ProxyStudent("Alice", 1);
+		IStudent student2 = new ProxyStudent("Bob", 2);
+
+		// Student details are loaded only when displayDetails() is called
+		System.out.println("First call to displayDetails() for student1:");
+		student1.displayDetails();
+
+		System.out.println("\nFirst call to displayDetails() for student2:");
+		student2.displayDetails();
+
+		System.out.println("\nSecond call to displayDetails() for student1:");
+		student1.displayDetails();
+	}
+}

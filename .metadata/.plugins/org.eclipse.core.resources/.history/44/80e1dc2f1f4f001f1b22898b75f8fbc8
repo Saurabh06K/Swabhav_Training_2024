@@ -1,0 +1,19 @@
+package com.Aurionpro.Creaational.Factory.Model;
+
+import com.Aurionpro.Creaational.Factory.ICar;
+
+public class Maruti implements ICar {
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		System.out.println("Maruti Car Starts");
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		System.out.println("Maruti Car Stops");
+	}
+
+}

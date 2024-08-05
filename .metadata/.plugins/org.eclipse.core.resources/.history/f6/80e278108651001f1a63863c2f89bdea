@@ -1,0 +1,20 @@
+package com.Aurionpro.UnitTesting;
+
+public class Operations {
+	int addition(int number1, int number2) {
+		return number1 + number2;
+	}
+	
+	int subtraction(int number1, int number2) {
+		return number1 - number2;
+	}
+	
+	int multiplication(int number1, int number2) {
+		return number1 * number2;
+	}
+	
+	int[] numbers =  {5, 6, 7};
+	for(int i=0; i<squaresOfArrayElements.length(); i++) {
+		
+	}
+}

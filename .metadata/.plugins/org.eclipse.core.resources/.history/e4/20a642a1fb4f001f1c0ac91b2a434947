@@ -1,0 +1,15 @@
+package com.Aurionpro.Structural.Decorator.Test;
+
+import com.Aurionpro.Structural.Decorator.Model.CarInspection;
+import com.Aurionpro.Structural.Decorator.Model.ICarService;
+import com.Aurionpro.Structural.Decorator.Model.OilChange;
+
+public class CarServiceTest {
+	public static void main(String[] args) {
+		ICarService car1 = new CarInspection();
+		System.out.println(car1.getCost());
+		
+		ICarService car2 = new OilChange();
+		car2.getCost();
+	}
+}

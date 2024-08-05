@@ -1,0 +1,9 @@
+package com.Aurionpro.Ocp.Violation.Test;
+import com.Aurionpro.Ocp.Violation.Model.FixedDeposit;
+
+public class FixedDepositTest {
+	public static void main(String[] args) {
+		FixedDepositTest fxedDeposit = new FixedDepositTest();
+		fxedDeposit.
+	}
+}

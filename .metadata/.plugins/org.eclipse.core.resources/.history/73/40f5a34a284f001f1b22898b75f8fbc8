@@ -1,0 +1,9 @@
+package com.Aurionpro.Creaational.Factory.Test;
+
+import com.Aurionpro.Creaational.Factory.Model.AccountFactory;
+
+public class AccountTest {
+	public static void main(String[] args) {
+		AccountFactory account = new AccountFactory();
+	}
+}

@@ -1,0 +1,24 @@
+package com.Aurionpro.Behavioural.State.Model;
+
+public class Packet {
+
+	IPacketState packetState;
+
+	public Packet(IPacketState packetState) {
+		super();
+		this.packetState = packetState;
+	}
+
+	public void previous() {
+		packetState.previous(this);
+	}
+
+	public void next() {
+		packetState.next(this);
+	}
+
+	public void current() {
+		packetState.current(this);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.Aurionpro.Creaational.AbstractFactory.Model;
+
+public interface IAccounts {
+	
+}

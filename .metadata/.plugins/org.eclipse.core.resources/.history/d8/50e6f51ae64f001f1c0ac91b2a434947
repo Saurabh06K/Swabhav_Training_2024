@@ -1,0 +1,5 @@
+package com.Aurionpro.Structural.Facade.Model;
+
+public class HotelReception {
+
+}

@@ -1,0 +1,11 @@
+package com.Aurionpro.Structural.Decorator.Model;
+
+public class WheelAllign {
+	ICarService wheelAllign = new ICarService() {
+		
+		@Override
+		public double getCost() {
+			return 400 + wheelAllign.getCost();
+		}
+	};
+}

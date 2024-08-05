@@ -1,0 +1,12 @@
+package com.Aurionpro.Structural.Decorator.Test;
+
+import com.Aurionpro.Structural.Decorator.Model.IHat;
+import com.Aurionpro.Structural.Decorator.Model.PremiumHat;
+import com.Aurionpro.Structural.Decorator.Model.StandardHat;
+
+public class HatDecoratorTest {
+	public static void main(String[] args) {
+		IHat standardHat = new StandardHat();
+		IHat premiumHat = new PremiumHat();
+	}
+}

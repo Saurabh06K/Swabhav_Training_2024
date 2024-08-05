@@ -1,0 +1,11 @@
+package com.Aurionpro.dip.Solution.Test;
+
+import com.Aurionpro.dip.Solution.Model.DBLogger;
+import com.Aurionpro.dip.Solution.Model.TaxCalculator;
+
+public class TaxCalculatorTest {
+	public static void main(String[] args) {
+		TaxCalculator t1 = new TaxCalculator(new DBLogger());
+		t1.calculateTax(5000, 2);		
+	}
+}

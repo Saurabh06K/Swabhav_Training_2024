@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.Aurionpro.Model.CurrentAccount.overDraftLimit&apos; in &apos;com.Aurionpro.Model.CurrentAccount&apos;&#x0D;&#x0A;- Original project: &apos;Inheritence&apos;&#x0D;&#x0A;- Original element: &apos;com.Aurionpro.Model.CurrentAccount.overDraftLimit&apos;&#x0D;&#x0A;- Getter method name: &apos;getOverDraftLimit&apos;&#x0D;&#x0A;- Setter method name: &apos;setOverDraftLimit&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;overDraftLimit&apos;" flags="589830" getter="getOverDraftLimit" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.Aurionpro.Model{CurrentAccount.java[CurrentAccount^overDraftLimit" insertion="4" setter="setOverDraftLimit" stamp="1721378329888" version="1.0" visibility="1"/>
+</session>

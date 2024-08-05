@@ -1,0 +1,41 @@
+package com.Aurionpro.Creaational.Factory.Model;
+
+public class SavingsAccount implements IAccount {
+	
+	private String accountName;
+	private int accountNumber;
+	private double minBalance;
+
+	public String getAccountName() {
+		return accountName;
+	}
+
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
+	}
+
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public double getMinBalance() {
+		return minBalance;
+	}
+
+	public void setMinBalance(double minBalance) {
+		this.minBalance = minBalance;
+	}
+
+	@Override
+	public void credit() {
+	}
+
+	@Override
+	public void debit() {
+	}
+
+}

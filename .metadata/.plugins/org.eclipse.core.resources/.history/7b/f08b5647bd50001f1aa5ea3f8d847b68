@@ -1,0 +1,29 @@
+package com.Aurionpro.Behavioural.State.Model;
+
+public class Packet {
+
+	IPacketState state = new IPacketState() {
+		
+		@Override
+		public void previous() {
+			
+		}
+		
+		@Override
+		public void next() {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void current() {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+	
+	public Packet(IPacketState packetState) {
+		super();
+		this.packetState = packetState;
+	}
+}

@@ -1,0 +1,44 @@
+package com.Aurionpro.UnitTesting;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TicTacToeTest {
+
+	@Test
+	void testMain() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDisplayBoard() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testPlayerMove() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testIsMoveValid() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdateBoard() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testCheckWin() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testClearScreen() {
+		fail("Not yet implemented");
+	}
+
+}

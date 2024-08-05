@@ -1,0 +1,15 @@
+package com.Aurionpro.UnitTesting;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+
+class TicTacToeTest {
+
+	TicTacToe game;
+	
+	@BeforeEach
+	public void init() {
+		game = new TicTacToe();
+	}
+
+}

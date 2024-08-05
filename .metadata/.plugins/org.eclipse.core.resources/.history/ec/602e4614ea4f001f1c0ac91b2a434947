@@ -1,0 +1,17 @@
+package com.Aurionpro.Structural.Facade.Model;
+
+public class WatchMovie {
+	public void startMovie() {
+		DvdPlayer dvdPlayer = new DvdPlayer();
+		dvdPlayer.on();
+		dvdPlayer.start();
+		
+		Projector projector = new Projector();
+		projector.on();
+		projector.input("USB");
+		
+		SoundSystem soundSystem = new SoundSystem();
+		soundSystem.start();
+		soundSystem.volume(25);
+	}
+}

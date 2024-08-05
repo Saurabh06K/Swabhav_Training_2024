@@ -1,0 +1,10 @@
+package com.Aurionpro.dip.Violation.Model;
+
+public class TaxCalculator {
+	void TaxCalculator() {
+		
+	}
+	public int calculateTax(int amount, int rate) {
+		return amount / rate;
+	}
+}

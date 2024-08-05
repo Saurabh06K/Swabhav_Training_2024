@@ -1,0 +1,30 @@
+package com.Aurionpro.Structural.Adapter.Model;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ShoppingCart {
+	List<IItems> cartItems;
+
+	public ShoppingCart(List<IItems> cartItems) {
+		super();
+		this.cartItems = cartItems;
+	}
+	
+	void addItemToCart(IItems item) {
+		cartItems.add(item);
+	}
+	
+	public List<IItems> getCartItems() {
+		return cartItems;
+	}
+	
+	double getCartPrice() {
+		double totalPrice = 0.0;
+		for (IItems iItems : cartItems) {
+			totalPrice += iItems.getItemPrice();
+		}
+		return totalPrice;
+	}
+}

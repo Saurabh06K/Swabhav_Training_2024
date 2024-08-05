@@ -1,0 +1,13 @@
+package com.Aurionpro.Creaational.Factory.Model;
+
+public class AccountFactory {
+	IAccount accountType = null;
+	
+	public AccountType getAccountType(AccountType accountType) {
+		if(accountType == (AccountType.CURRENT))
+			accountType = new CurrentAccount();
+		if(accountType == (AccountType.SAVINGS))
+			accountType = new SavingsAccount();
+		return accountType;
+	}
+}

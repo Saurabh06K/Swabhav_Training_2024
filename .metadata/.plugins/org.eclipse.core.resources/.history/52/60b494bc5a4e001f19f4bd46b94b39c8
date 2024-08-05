@@ -1,0 +1,5 @@
+package com.Aurionpro.Isp.Solution.Model;
+
+public interface IWorkable {
+
+}

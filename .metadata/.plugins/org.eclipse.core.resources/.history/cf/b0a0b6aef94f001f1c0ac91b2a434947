@@ -1,0 +1,13 @@
+package com.Aurionpro.Structural.Decorator.Model;
+
+public abstract class CarServiceDecorator implements ICarService {
+	public CarServiceDecorator(ICarService car) {
+		
+	}
+	ICarService car = new ICarService() {
+		@Override
+		public double getCost() {
+			return car.getCost();
+		}
+	};
+}

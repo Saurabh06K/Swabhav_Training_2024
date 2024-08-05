@@ -1,0 +1,7 @@
+package com.Aurionpro.Creaational.Prototype;
+
+public interface IShape extends Cloneable {
+	Shape clone();
+
+	void draw();
+}

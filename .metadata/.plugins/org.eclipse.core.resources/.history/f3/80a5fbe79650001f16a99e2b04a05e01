@@ -1,0 +1,25 @@
+package com.Aurionpro.Structural.Decorator.Test;
+
+import com.Aurionpro.Structural.Decorator.Model.GoldenHat;
+import com.Aurionpro.Structural.Decorator.Model.IHat;
+import com.Aurionpro.Structural.Decorator.Model.PremiumHat;
+import com.Aurionpro.Structural.Decorator.Model.RibbonedHat;
+import com.Aurionpro.Structural.Decorator.Model.StandardHat;
+
+public class HatDecoratorTest {
+	public static void main(String[] args) {
+		IHat standardHat = new StandardHat();
+		IHat goldenStandardHat = new GoldenHat(standardHat);
+		IHat ribbonedStandardHat = new RibbonedHat(standardHat);
+		
+		IHat premiumHat = new PremiumHat();
+		IHat goldenPremiumHat = new GoldenHat(premiumHat);
+		IHat ribbonedPremiumHat = new RibbonedHat(premiumHat);
+	}
+	
+	public static void printDetails(IHat hat) {
+        System.out.println("Name: " + hat.getName());
+        System.out.println("Price: " + hat.getPrice());
+        System.out.println("Description: " + hat.getDescription());
+    }
+}

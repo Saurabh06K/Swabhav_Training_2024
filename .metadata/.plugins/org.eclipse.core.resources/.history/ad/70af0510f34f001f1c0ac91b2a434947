@@ -1,0 +1,18 @@
+package com.Aurionpro.Structural.Adapter.Test;
+
+import com.Aurionpro.Structural.Adapter.Model.Biscuit;
+import com.Aurionpro.Structural.Adapter.Model.Hat;
+import com.Aurionpro.Structural.Adapter.Model.HatAdapter;
+
+public class ShoppingTest {
+	public static void main(String[] args) {
+		Biscuit biscuit = new Biscuit();
+		biscuit.setName("Oreo");
+		biscuit.setMrp(50);
+		
+		Hat hat = new Hat("Top", "Hat", 800, 30);
+		HatAdapter hatAdapter = new HatAdapter(hat);
+		hatAdapter.getItemName();
+		hatAdapter.getItemPrice();
+	}
+}

@@ -1,0 +1,7 @@
+package com.Aurionpro.Structural.Decorator.Model;
+
+public interface IHat {
+	String getName();
+	String getPrice();
+	String getDescription();
+}

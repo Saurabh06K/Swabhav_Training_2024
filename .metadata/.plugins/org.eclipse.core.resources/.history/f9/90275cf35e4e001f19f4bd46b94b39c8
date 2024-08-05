@@ -1,0 +1,11 @@
+package com.Aurionpro.dip.Violation.Test;
+
+import com.Aurionpro.dip.Violation.Model.TaxCalculator;
+
+public class TaxCalculatorTest {
+	public static void main(String[] args) {
+		TaxCalculator t1 = new TaxCalculator();
+		double tax = t1.calculateTax(100000, 5);
+		System.out.println("The tax amount is: "+tax);
+	}
+}

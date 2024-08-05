@@ -1,0 +1,7 @@
+package com.Aurionpro.Behavioural.Observer.Exceptions;
+
+public class InsufficientFundsException extends RuntimeException {
+	public static String alert() {
+		return "Transaction Failed.\nInsufficient Funds in your Account.";
+	}
+}
